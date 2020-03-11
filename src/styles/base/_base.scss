@@ -15,5 +15,5 @@ button:disabled {
 }
 
 .is-active {
-  font-weight: bold;
+  color: darken(grey, 20%) !important;
 }
