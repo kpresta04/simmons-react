@@ -1,11 +1,30 @@
 header {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  background-color: grey;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1em;
   align-items: center;
+  text-transform: uppercase;
+}
+#siteLinks a,
+#accountLinks a {
+  color: grey;
+  font-weight: bold;
+
+  margin: 0 1em;
 }
 
 header img {
-  height: 10em;
-  width: 12em;
+  height: 6em;
+  width: 9em;
+  grid-column: 1;
+  float: right;
+}
+
+#siteLinks {
+  grid-column: 2 / 4;
+  margin: 0 auto;
+}
+
+#accountLinks {
+  grid-column: 4;
 }
