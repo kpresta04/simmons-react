@@ -1,0 +1,11 @@
+header {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: grey;
+  align-items: center;
+}
+
+header img {
+  height: 10em;
+  width: 12em;
+}

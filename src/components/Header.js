@@ -5,14 +5,23 @@ const Header = () => (
   <div>
     <header>
       <NavLink to="/" activeClassName="is-active" exact={true}>
-        Dashboard
+        <img src="./simmons-logo-branding-1B-3.png"></img>
       </NavLink>
-      <NavLink to="/create" activeClassName="is-active">
-        Create
+      <NavLink to="/shop" activeClassName="is-active">
+        Shop
       </NavLink>
 
-      <NavLink to="/help" activeClassName="is-active">
-        Get Help
+      <NavLink to="/services" activeClassName="is-active">
+        Services
+      </NavLink>
+      <NavLink to="/contact" activeClassName="is-active">
+        Contact
+      </NavLink>
+      <NavLink to="/login" activeClassName="is-active">
+        Login
+      </NavLink>
+      <NavLink to="/cart" activeClassName="is-active">
+        Cart
       </NavLink>
     </header>
   </div>
