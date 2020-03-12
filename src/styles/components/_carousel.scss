@@ -1,5 +1,5 @@
 .carousel img {
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .legend h3 {
@@ -8,4 +8,13 @@
 
 .legend h1 {
   text-transform: uppercase;
+}
+li.slide.selected {
+  max-height: 600px;
+}
+
+.carousel {
+  max-width: 2400px;
+  max-height: 600px;
+  margin: 5px auto !important;
 }

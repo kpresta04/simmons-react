@@ -12,6 +12,8 @@ button {
 body,
 html {
   position: fixed;
+  height: 100%;
+  width: 100%;
 }
 
 button:disabled {
