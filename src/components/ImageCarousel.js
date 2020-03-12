@@ -14,7 +14,10 @@ class ImageCarousel extends React.Component {
       >
         <div>
           <img src="./carousel/gunAndShells.jpg" />
-          <p className="legend">Legend 3</p>
+          <div className="legend">
+            <h3>In case you haven't heard...</h3>
+            <h1>Simmons Restores Firearms</h1>
+          </div>
         </div>
         <div>
           <img src="./carousel/pistols.jpg" />
