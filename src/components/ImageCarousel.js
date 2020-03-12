@@ -6,24 +6,24 @@ class ImageCarousel extends React.Component {
     return (
       <Carousel
         infiniteLoop={true}
-        autoPlay={true}
-        interval={5000}
+        autoPlay={false}
+        interval={10000}
         showThumbs={false}
         transitionTime={550}
         showStatus={false}
       >
         <div>
-          <img src="./carousel/img_lights_wide.jpg" />
+          <img src="./carousel/stock-photo-hunter-with-shotgun-gun-on-hunt-illegal-hunting-poacher-in-the-forest-american-hunting-rifles-1500819701.jpg" />
           <p className="legend">Legend 1</p>
         </div>
         <div>
-          <img src="./carousel/img_mountains_wide.jpg" />
-
-          <p className="legend">Legend 2</p>
+          <img src="./carousel/gunAndShells.jpg" />
+          <p className="legend">Legend 3</p>
         </div>
         <div>
-          <img src="./carousel/img_nature_wide.jpg" />
-          <p className="legend">Legend 3</p>
+          <img src="./carousel/rifleScope.jpg" />
+
+          <p className="legend">Legend 2</p>
         </div>
       </Carousel>
     );

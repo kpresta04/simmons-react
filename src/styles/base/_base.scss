@@ -9,6 +9,10 @@ body {
 button {
   cursor: pointer;
 }
+body,
+html {
+  position: fixed;
+}
 
 button:disabled {
   cursor: default;
