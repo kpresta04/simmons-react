@@ -13,13 +13,14 @@ class ImageCarousel extends React.Component {
         showStatus={false}
       >
         <div>
-          <img src="./carousel/stock-photo-hunter-with-shotgun-gun-on-hunt-illegal-hunting-poacher-in-the-forest-american-hunting-rifles-1500819701.jpg" />
-          <p className="legend">Legend 1</p>
-        </div>
-        <div>
           <img src="./carousel/gunAndShells.jpg" />
           <p className="legend">Legend 3</p>
         </div>
+        <div>
+          <img src="./carousel/pistols.jpg" />
+          <p className="legend">Legend 1</p>
+        </div>
+
         <div>
           <img src="./carousel/rifleScope.jpg" />
 
