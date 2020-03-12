@@ -19,7 +19,7 @@ const Header = () => (
           About
         </NavLink>
         <NavLink to="/contact" activeClassName="is-active">
-          Contact
+          Contact Us
         </NavLink>
       </div>
       <div id="accountLinks">

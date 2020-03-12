@@ -5,10 +5,15 @@ header {
   align-items: center;
   text-transform: uppercase;
 }
+#siteLinks a:hover,
+#accountLinks a:hover {
+  text-decoration: underline;
+}
 #siteLinks a,
 #accountLinks a {
   color: grey;
   font-weight: bold;
+  text-decoration: none;
 
   margin: 0 1em;
 }
