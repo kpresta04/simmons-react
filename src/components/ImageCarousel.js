@@ -1,7 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 
 class ImageCarousel extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <Carousel
@@ -17,7 +21,11 @@ class ImageCarousel extends React.Component {
           <div className="legend">
             <h3>In case you haven't heard...</h3>
             <h1>Simmons Restores Firearms</h1>
-            <button>Browse Our Services</button>
+            <button>
+              <Link to="/services" className="carouselLink">
+                Browse Our Services
+              </Link>
+            </button>
           </div>
         </div>
         <div>
@@ -25,7 +33,11 @@ class ImageCarousel extends React.Component {
           <div className="legend">
             <h3>Since 1945</h3>
             <h1>We Sell Shotguns, rifles, and pistols - all brands</h1>
-            <button>Shop Now</button>
+            <button>
+              <Link to="/shop" className="carouselLink">
+                Shop Now
+              </Link>
+            </button>
           </div>
         </div>
 
@@ -34,7 +46,11 @@ class ImageCarousel extends React.Component {
           <div className="legend">
             <h3>Repairs and Upgrades</h3>
             <h1>Professional gunsmithing with over 75 years of history!</h1>
-            <button>Contact Us</button>
+            <button>
+              <Link to="/contact" className="carouselLink">
+                Contact Us
+              </Link>
+            </button>
           </div>
         </div>
       </Carousel>
