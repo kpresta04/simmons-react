@@ -17,18 +17,6 @@ class ImageCarousel extends React.Component {
         showStatus={false}
       >
         <div>
-          <img src="./carousel/gunAndShells.jpg" />
-          <div className="legend">
-            <h3>In case you haven't heard...</h3>
-            <h1>Simmons Restores Firearms</h1>
-            <button>
-              <Link to="/services" className="carouselLink">
-                Browse Our Services
-              </Link>
-            </button>
-          </div>
-        </div>
-        <div>
           <img src="./carousel/pistols.jpg" />
           <div className="legend">
             <h3>Since 1945</h3>
@@ -36,6 +24,18 @@ class ImageCarousel extends React.Component {
             <button>
               <Link to="/shop" className="carouselLink">
                 Shop Now
+              </Link>
+            </button>
+          </div>
+        </div>
+        <div>
+          <img src="./carousel/gunAndShells.jpg" />
+          <div className="legend">
+            <h3>In case you haven't heard...</h3>
+            <h1>Simmons Restores Firearms</h1>
+            <button>
+              <Link to="/services" className="carouselLink">
+                Browse Our Services
               </Link>
             </button>
           </div>
