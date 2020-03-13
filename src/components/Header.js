@@ -6,8 +6,13 @@ const Header = () => (
   <div>
     <header>
       {screen.width < 700 && <BurgerMenu />}
-      <NavLink to="/" activeClassName="is-active" exact={true}>
-        <img src="./simmons-logo-branding-1B-3.png"></img>
+      <NavLink
+        to="/"
+        className="headerLogo"
+        activeClassName="is-active"
+        exact={true}
+      >
+        <img src="./logoSmall.png"></img>
       </NavLink>
       {screen.width > 700 && (
         <div style={{ display: "contents" }}>
