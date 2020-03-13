@@ -17,12 +17,14 @@ header {
 
   margin: 0 1em;
 }
-
+.headerLogo {
+  grid-column: 3;
+}
 header img {
-  height: 6em;
-  width: 9em;
-  grid-column: 1;
-  float: right;
+  height: 5em;
+  width: 8em;
+  // grid-column: 1;
+  // float: right;
 }
 
 #siteLinks {

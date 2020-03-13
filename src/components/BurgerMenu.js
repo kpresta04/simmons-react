@@ -31,22 +31,6 @@ export default class BurgerMenu extends React.Component {
         noOverlay
       >
         <NavLink
-          to="/login"
-          onClick={() => this.closeMenu()}
-          className="menu-item"
-          activeClassName="is-active"
-        >
-          Login
-        </NavLink>
-        <NavLink
-          to="/cart"
-          onClick={() => this.closeMenu()}
-          className="menu-item"
-          activeClassName="is-active"
-        >
-          Cart
-        </NavLink>
-        <NavLink
           onClick={() => this.closeMenu()}
           to="/shop"
           activeClassName="is-active"
@@ -74,6 +58,22 @@ export default class BurgerMenu extends React.Component {
           activeClassName="is-active"
         >
           Contact Us
+        </NavLink>
+        <NavLink
+          to="/login"
+          onClick={() => this.closeMenu()}
+          className="menu-item"
+          activeClassName="is-active"
+        >
+          Login
+        </NavLink>
+        <NavLink
+          to="/cart"
+          onClick={() => this.closeMenu()}
+          className="menu-item"
+          activeClassName="is-active"
+        >
+          Cart
         </NavLink>
       </Menu>
     );

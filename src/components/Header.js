@@ -14,7 +14,7 @@ const Header = () => (
       >
         <img src="./logoSmall.png"></img>
       </NavLink>
-      {screen.width > 700 && (
+      {screen.width >= 700 && (
         <div style={{ display: "contents" }}>
           <div id="siteLinks">
             <NavLink to="/shop" activeClassName="is-active">
