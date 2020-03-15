@@ -1,0 +1,16 @@
+.notFoundDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.notFoundDiv a {
+  font-size: 1.5em;
+}
+
+h1 {
+  font-size: 3em;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
