@@ -32,6 +32,14 @@ export default class BurgerMenu extends React.Component {
       >
         <NavLink
           onClick={() => this.closeMenu()}
+          to="/"
+          activeClassName="is-active"
+          exact={true}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          onClick={() => this.closeMenu()}
           to="/shop"
           activeClassName="is-active"
         >
