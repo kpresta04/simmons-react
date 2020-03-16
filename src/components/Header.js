@@ -5,7 +5,7 @@ import BurgerMenu from "./BurgerMenu";
 const Header = () => (
   <div>
     <header>
-      {screen.width < 700 && <BurgerMenu />}
+      {window.screen.width < 700 && <BurgerMenu />}
       <NavLink
         to="/"
         className="headerLogo"
@@ -14,7 +14,7 @@ const Header = () => (
       >
         <img src="./logoSmall.png"></img>
       </NavLink>
-      {screen.width >= 700 && (
+      {window.screen.width >= 700 && (
         <div style={{ display: "contents" }}>
           <div id="siteLinks">
             <NavLink to="/shop" activeClassName="is-active">
