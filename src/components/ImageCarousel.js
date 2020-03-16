@@ -20,7 +20,7 @@ class ImageCarousel extends React.Component {
           <img src="./carousel/pistols.jpg" />
           <div className="legend">
             <h3>Since 1945</h3>
-            <h1>We Sell Shotguns, rifles, and pistols - all brands</h1>
+            <h1>We sell shotguns, rifles, and pistols - all brands</h1>
             <button>
               <Link to="/shop" className="carouselLink">
                 Shop Now
