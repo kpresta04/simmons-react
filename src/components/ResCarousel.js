@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class ResCarousel extends React.Component {
   constructor(props) {
@@ -41,17 +42,47 @@ class ResCarousel extends React.Component {
         <div className="slideshow-container">
           <div className="mySlides fade">
             <img src="./carousel/pistols.jpg" style={{ width: "100%" }} />
-            <div className="text">Caption Text</div>
+            <div className="text">
+              <div className="captionBlock">
+                <h3>Simmons Gun Repair</h3>
+                <h1>Professional gunsmithing with over 75 years of history!</h1>
+                <button>
+                  <Link to="/shop" className="carouselLink">
+                    Shop Now
+                  </Link>
+                </button>
+              </div>
+            </div>
           </div>
 
           <div className="mySlides fade">
             <img src="./carousel/gunAndShells.jpg" style={{ width: "100%" }} />
-            <div className="text">Caption Two</div>
+            <div className="text">
+              <div className="captionBlock">
+                <h3>In case you haven't heard...</h3>
+                <h1>Simmons Restores Firearms</h1>
+                <button>
+                  <Link to="/services" className="carouselLink">
+                    Browse Our Services
+                  </Link>
+                </button>
+              </div>
+            </div>
           </div>
 
           <div className="mySlides fade">
             <img src="./carousel/rifleScope.jpg" style={{ width: "100%" }} />
-            <div className="text">Caption Three</div>
+            <div className="text">
+              <div className="captionBlock">
+                <h3>Since 1945</h3>
+                <h1>We sell shotguns, rifles, and pistols - all brands!</h1>
+                <button>
+                  <Link to="/contact" className="carouselLink">
+                    Contact Us
+                  </Link>
+                </button>
+              </div>
+            </div>
           </div>
 
           <a className="prev" onClick={() => this.plusSlides(-1)}>
