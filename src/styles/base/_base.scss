@@ -1,28 +1,31 @@
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
+	overflow: hidden !important;
 }
 body {
-  // background: $dark-blue;
-  font-family: Helvitica, Arial, sans-serif;
-  font-size: $m-size;
+	// background: $dark-blue;
+	font-family: Helvitica, Arial, sans-serif;
+	font-size: $m-size;
 }
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
 body,
 html {
-  position: fixed;
-  height: 100%;
-  width: 100%;
+	overflow-y: scroll;
+
+	position: fixed;
+	height: 100%;
+	width: 100%;
 }
 
 button:disabled {
-  cursor: default;
+	cursor: default;
 }
 
 .is-active {
-  color: darken(grey, 20%) !important;
-  text-decoration: underline !important;
+	color: darken(grey, 20%) !important;
+	text-decoration: underline !important;
 }
 // .carousel .slider-wrapper {
 //   /*CSS transitions*/
