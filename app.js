@@ -22,8 +22,8 @@ const store = configureStore();
 // // console.log(getVisibleExpenses(state.expenses, state.filters));
 
 const jsx = (
-  <Provider store={store}>
-    <AppRouter />
-  </Provider>
+	<Provider store={store}>
+		<AppRouter />
+	</Provider>
 );
 ReactDOM.render(jsx, document.querySelector("#app"));
