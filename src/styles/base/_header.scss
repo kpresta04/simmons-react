@@ -1,37 +1,43 @@
 header {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 0.5em;
-  align-items: center;
-  text-transform: uppercase;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	// margin-top: 0.5em;
+	align-items: center;
+	text-transform: uppercase;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 96px;
+	margin-bottom: 1em;
+	background-color: white;
 }
 #siteLinks a:hover,
 #accountLinks a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 #siteLinks a,
 #accountLinks a {
-  color: grey;
-  font-weight: bold;
-  text-decoration: none;
+	color: grey;
+	font-weight: bold;
+	text-decoration: none;
 
-  margin: 0 1em;
+	margin: 0 1em;
 }
 .headerLogo {
-  grid-column: 3;
+	grid-column: 3;
 }
 header img {
-  height: 5em;
-  width: 8em;
-  // grid-column: 1;
-  // float: right;
+	height: 5em;
+	width: 8em;
+	// grid-column: 1;
+	// float: right;
 }
 
 #siteLinks {
-  grid-column: 2 / 4;
-  margin: 0 auto;
+	grid-column: 2 / 4;
+	margin: 0 auto;
 }
 
 #accountLinks {
-  grid-column: 4;
+	grid-column: 4;
 }
