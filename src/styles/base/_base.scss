@@ -6,6 +6,7 @@ body {
 	// background: $dark-blue;
 	font-family: Helvitica, Arial, sans-serif;
 	font-size: $m-size;
+	margin-bottom: 3em;
 }
 button {
 	cursor: pointer;
@@ -13,6 +14,7 @@ button {
 body,
 html {
 	overflow-y: scroll;
+	overflow-x: hidden;
 
 	position: fixed;
 	height: 100%;
