@@ -44,5 +44,5 @@ button:disabled {
 //   animation: none !important;
 // }
 .main {
-	min-height: 94vh;
+	min-height: calc(100vh - 12em);
 }

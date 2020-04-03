@@ -8,6 +8,7 @@ import NotFoundPage from "../components/NotFoundPage";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Privacy from "../components/Privacy";
+import AboutPage from "../components/AboutPage";
 
 const AppRouter = () => (
 	<BrowserRouter>
@@ -18,6 +19,7 @@ const AppRouter = () => (
 				<Route path="/create" component={AddExpensePage} />
 				<Route path="/edit/:id" component={EditPage} />
 				<Route path="/help" component={HelpPage} />
+				<Route path="/about" component={AboutPage} />
 				<Route path="/privacy" component={Privacy} />
 				<Route component={NotFoundPage} />
 			</Switch>
