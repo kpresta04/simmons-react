@@ -13,16 +13,29 @@ class ResCarousel extends React.Component {
 	currentSlide(n) {
 		this.showSlides((this.slideIndex = n));
 	}
+
+	setCarouselInterval() {
+		this.interval = setInterval(() => {
+			this.plusSlides(1);
+		}, 7000);
+	}
 	componentDidMount() {
 		this.showSlides(this.slideIndex);
 		const next = document.querySelector(".next");
 
+		document.addEventListener("click", e => {
+			if (
+				e.target.className === "next" ||
+				e.target.className === "prev" ||
+				e.target.className === "dot"
+			) {
+				clearInterval(this.interval);
+				this.setCarouselInterval();
+			}
+		});
+
 		if (!this.interval) {
-			this.interval = setInterval(() => {
-				if (next) {
-					next.click();
-				}
-			}, 7000);
+			this.setCarouselInterval();
 		}
 	}
 	showSlides(n) {
