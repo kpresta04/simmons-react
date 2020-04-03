@@ -5,11 +5,11 @@ import MainContent from "./MainContent";
 import ResCarousel from "./ResCarousel";
 
 const ExpenseDashboardPage = () => (
-  <div>
-    <ResCarousel />
+	<div className="main">
+		<ResCarousel />
 
-    <MainContent />
-  </div>
+		<MainContent />
+	</div>
 );
 
 export default ExpenseDashboardPage;
