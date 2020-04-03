@@ -6,6 +6,7 @@ class ResCarousel extends React.Component {
 		super(props);
 		this.slideIndex = 1;
 		this.interval = false;
+		this.mounted = 1;
 	}
 	plusSlides(n) {
 		this.showSlides((this.slideIndex += n));
@@ -15,30 +16,25 @@ class ResCarousel extends React.Component {
 	}
 
 	setCarouselInterval() {
+		const next = document.querySelector(".next");
+		clearInterval(this.interval);
+
 		this.interval = setInterval(() => {
-			this.plusSlides(1);
+			if (next) {
+				next.click();
+			}
 		}, 7000);
 	}
 	componentDidMount() {
 		this.showSlides(this.slideIndex);
-		const next = document.querySelector(".next");
-
-		document.addEventListener("click", e => {
-			if (
-				e.target.className === "next" ||
-				e.target.className === "prev" ||
-				e.target.className === "dot"
-			) {
-				clearInterval(this.interval);
-				this.setCarouselInterval();
-			}
-		});
 
 		if (!this.interval) {
 			this.setCarouselInterval();
 		}
 	}
 	showSlides(n) {
+		this.setCarouselInterval();
+
 		var i;
 		var slides = [...document.getElementsByClassName("mySlides")];
 		var dots = [...document.getElementsByClassName("dot")];
