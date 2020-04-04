@@ -1,4 +1,5 @@
 .about {
+	width: 100%;
 	max-width: 1050px;
 	margin: 0 auto;
 
@@ -7,11 +8,13 @@
 
 	p {
 		width: 100%;
-		display: inline-flex;
-		justify-content: center;
+		// display: inline-flex;
+		// justify-content: center;
+		margin-top: 0.5em;
 		font-size: 1.4em;
 		line-height: 1.5em;
 		color: $greyBlue;
+		text-align: justify;
 	}
 	.banner {
 		position: relative;
@@ -20,7 +23,7 @@
 		text-shadow: 2px 2px black;
 	}
 	.bannerImage {
-		opacity: 0.8;
+		opacity: 0.9;
 	}
 
 	h1 {
@@ -31,11 +34,11 @@
 		margin: 0 auto;
 		font-size: 2.5em;
 		color: white;
-		z-index: 2;
+		z-index: 1;
 	}
 	.smallImage {
-		float: right;
-		margin: 0 0 0.5em 1em;
+		float: left;
+		margin: 1em 1em 0 0;
 		border-radius: 8px;
 		min-width: 140px;
 		height: 140px;
