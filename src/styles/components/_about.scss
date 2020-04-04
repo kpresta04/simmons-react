@@ -1,14 +1,61 @@
 .about {
 	max-width: 1050px;
 	margin: 0 auto;
-	// margin-top: 7em;
-	flex: 1 0 auto;
-	justify-content: center;
+
+	// justify-content: center;
 	padding: 1em;
-	h1,
+
 	p {
 		width: 100%;
 		display: inline-flex;
 		justify-content: center;
+		font-size: 1.4em;
+		line-height: 1.5em;
+		color: $greyBlue;
+	}
+	.banner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-shadow: 2px 2px black;
+	}
+	.bannerImage {
+		opacity: 0.8;
+	}
+
+	h1 {
+		position: absolute;
+		top: 40%;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 2.5em;
+		color: white;
+		z-index: 2;
+	}
+	.smallImage {
+		float: right;
+		margin: 0 0 0.5em 1em;
+		border-radius: 8px;
+		min-width: 140px;
+		height: 140px;
+	}
+}
+@media only screen and (min-width: 760px) {
+	.banner h1 {
+		font-size: 4em;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.about p {
+		font-size: 1.8em;
+	}
+	.about .smallImage {
+		min-width: 280px;
+		height: 280px;
+	}
+	.banner h1 {
+		font-size: 5em;
 	}
 }
