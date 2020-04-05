@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => (
 	<div className="main">
@@ -27,6 +28,28 @@ const AboutPage = () => (
 				is still installing vent ribs and trying to improve your firearms
 				performance in any way we can.
 			</p>
+
+			<div id="staffContainer">
+				<div className="staffBlock">
+					<h5>Terry Presta</h5>
+					<h6>General Manager</h6>
+				</div>
+				<div className="staffBlock">
+					<h5>Jessika Calahan</h5>
+					<h6>Assistant Manager</h6>
+				</div>
+				<div className="staffBlock">
+					<h5>John Tippin</h5>
+					<h6>Craftsman</h6>
+				</div>
+				<div className="staffBlock">
+					<h5>Jim Clark</h5>
+					<h6>Craftsman</h6>
+				</div>
+			</div>
+			<button>
+				<Link to="/">Back To Simmons</Link>
+			</button>
 		</div>
 	</div>
 );
