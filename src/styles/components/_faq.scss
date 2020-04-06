@@ -41,9 +41,9 @@
 		color: $darkBlue;
 	}
 
-	.accordion a:hover::after {
-		border: 1px solid $darkBlue;
-	}
+	// .accordion a:hover::after {
+	// border: 1px solid $darkBlue;
+	// }
 
 	.accordion a.active-faq {
 		color: $darkBlue;
@@ -61,10 +61,10 @@
 		padding: 5px;
 		width: 30px;
 		height: 30px;
-		-webkit-border-radius: 50%;
-		-moz-border-radius: 50%;
-		border-radius: 50%;
-		border: 1px solid #7288a2;
+		// -webkit-border-radius: 50%;
+		// -moz-border-radius: 50%;
+		// border-radius: 50%;
+		// border: 1px solid #7288a2;
 		text-align: center;
 	}
 
@@ -72,7 +72,7 @@
 		font-family: "Ionicons";
 		content: "\2796";
 		color: $darkBlue;
-		border: 1px solid $darkBlue;
+		// border: 1px solid $darkBlue;
 	}
 
 	.accordion .content {

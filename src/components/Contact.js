@@ -6,7 +6,7 @@ const Contact = () => (
 	<div className="main">
 		<FAQ />
 		<div id="contact">
-			<h3>Get in Touch</h3>
+			<h3>Drop Us A Line</h3>
 
 			<form
 				id="contactForm"

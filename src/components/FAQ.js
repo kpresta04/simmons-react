@@ -73,10 +73,10 @@ class FAQ extends React.Component {
 								<p>
 									Firearm purchases are immediately pulled from our warehouse
 									and shipped directly to your FFL in the town you are located
-									in. Shipping containers are shipped directly to you with a
-									prepaid label for you to ship them to us. When your repair is
-									finished, we will ship your firearm directly back to you in
-									the container you bought.
+									in. For gun repairs, shipping containers are sent directly to
+									you with a prepaid label for you to ship them to us. When your
+									repair is finished, we will ship your firearm directly back to
+									you in the container you bought.
 								</p>
 							</div>
 						</div>
