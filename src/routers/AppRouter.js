@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, Link, NavLink } from "react-router-dom";
-import AddExpensePage from "../components/AddExpensePage";
 import homePage from "../components/homePage";
 import EditPage from "../components/EditExpensePage";
 import NotFoundPage from "../components/NotFoundPage";
@@ -9,6 +8,7 @@ import Footer from "../components/Footer";
 import Privacy from "../components/Privacy";
 import AboutPage from "../components/AboutPage";
 import Contact from "../components/Contact";
+import Login from "../components/Login";
 
 const AppRouter = () => (
 	<BrowserRouter>
@@ -16,7 +16,7 @@ const AppRouter = () => (
 			<Header />
 			<Switch>
 				<Route path="/" component={homePage} exact={true} />
-				<Route path="/create" component={AddExpensePage} />
+				<Route path="/login" component={Login} />
 				<Route path="/edit/:id" component={EditPage} />
 				<Route path="/contact" component={Contact} />
 				<Route path="/about" component={AboutPage} />
