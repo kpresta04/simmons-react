@@ -9,6 +9,7 @@ import Privacy from "../components/Privacy";
 import AboutPage from "../components/AboutPage";
 import Contact from "../components/Contact";
 import Login from "../components/Login";
+import FAQ from "../components/FAQ";
 
 const AppRouter = () => (
 	<BrowserRouter>
@@ -19,6 +20,8 @@ const AppRouter = () => (
 				<Route path="/login" component={Login} />
 				<Route path="/edit/:id" component={EditPage} />
 				<Route path="/contact" component={Contact} />
+				<Route path="/faq" component={FAQ} />
+
 				<Route path="/about" component={AboutPage} />
 				<Route path="/privacy" component={Privacy} />
 				<Route component={NotFoundPage} />

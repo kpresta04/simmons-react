@@ -6,7 +6,7 @@ export default class BurgerMenu extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			isOpen: false
+			isOpen: false,
 		};
 	}
 	handleStateChange(state) {
@@ -19,7 +19,7 @@ export default class BurgerMenu extends React.Component {
 	closeMenu() {
 		this.setState({ isOpen: false });
 	}
-	isMenuOpen = state => {
+	isMenuOpen = (state) => {
 		return this.state.isOpen;
 	};
 
@@ -27,7 +27,7 @@ export default class BurgerMenu extends React.Component {
 		return (
 			<Menu
 				isOpen={this.isMenuOpen()}
-				onStateChange={state => this.handleStateChange(state)}
+				onStateChange={(state) => this.handleStateChange(state)}
 				noOverlay
 				customBurgerIcon={<img src="./images/menu.png" />}
 			>
@@ -60,6 +60,13 @@ export default class BurgerMenu extends React.Component {
 					activeClassName="is-active"
 				>
 					About
+				</NavLink>
+				<NavLink
+					onClick={() => this.closeMenu()}
+					to="/faq"
+					activeClassName="is-active"
+				>
+					FAQ
 				</NavLink>
 				<NavLink
 					onClick={() => this.closeMenu()}

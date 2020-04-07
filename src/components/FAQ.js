@@ -18,7 +18,7 @@ class FAQ extends React.Component {
 
 	render() {
 		return (
-			<div className="faq">
+			<div className="main faq">
 				<div className="container">
 					<h3>Frequently Asked Questions</h3>
 
