@@ -28,6 +28,7 @@ const AboutPage = () => (
 				is still installing vent ribs and trying to improve your firearms
 				performance in any way we can.
 			</p>
+			<h3>Location</h3>
 			<iframe
 				className="map"
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.1512607969903!2d-94.79501588465031!3d38.874780979574126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87c0be168ec1e459%3A0x8d9751a4f3f505d8!2sSimmons%20Gun%20Repair%20%26%20Sales!5e0!3m2!1sen!2sus!4v1586277948017!5m2!1sen!2sus"
@@ -36,6 +37,7 @@ const AboutPage = () => (
 				aria-hidden="false"
 				tabIndex="0"
 			></iframe>
+			<h3>Our Team</h3>
 
 			<div id="staffContainer">
 				<div className="staffBlock">
