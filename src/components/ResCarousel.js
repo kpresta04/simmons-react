@@ -48,11 +48,11 @@ class ResCarousel extends React.Component {
 			slides[i].style.display = "none";
 		}
 		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
+			dots[i].className = dots[i].className.replace(" active-dot", "");
 		}
 		if (slides) {
 			slides[this.slideIndex - 1].style.display = "block";
-			dots[this.slideIndex - 1].className += " active";
+			dots[this.slideIndex - 1].className += " active-dot";
 		}
 	}
 	render() {
