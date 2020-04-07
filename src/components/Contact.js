@@ -14,9 +14,14 @@ const Contact = () => (
 					e.preventDefault();
 				}}
 			>
-				<input type="text" placeholder="NAME" />
-				<input type="email" placeholder="EMAIL" />
-				<textarea placeholder="YOUR MESSAGE" cols="30" rows="10"></textarea>
+				<input type="text" placeholder="NAME" required=" " />
+				<input type="email" placeholder="EMAIL" required=" " />
+				<textarea
+					placeholder="YOUR MESSAGE"
+					cols="30"
+					rows="10"
+					required=" "
+				></textarea>
 				<button id="sendBtn">Send </button>
 			</form>
 			<button>

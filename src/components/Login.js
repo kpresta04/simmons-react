@@ -12,8 +12,8 @@ const Login = () => (
 					e.preventDefault();
 				}}
 			>
-				<input type="text" placeholder="NAME" required=" " />
-				<input type="password" placeholder="EMAIL" required=" " />
+				<input type="text" placeholder="Username" required=" " />
+				<input type="password" placeholder="Password" required=" " />
 				<input type="checkbox" id="rememberPW" name="rememberPW" />
 				<label htmlFor="rememberPW" id="rememberLabel">
 					Remember me
