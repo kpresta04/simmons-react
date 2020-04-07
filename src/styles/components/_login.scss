@@ -8,7 +8,7 @@
 		display: flex;
 		margin-top: 0 !important;
 		position: absolute;
-		width: fit-content;
+		width: auto;
 		left: 20px;
 	}
 	#rememberLabel {
@@ -95,7 +95,7 @@
 		// font-size: 1.4em;
 
 		// margin: 40px 25px;
-		width: 200px;
+		width: 90%;
 		display: block;
 		border: none;
 		padding: 10px 0;
@@ -106,8 +106,8 @@
 			rgba(255, 255, 255, 0) 96%,
 			$color 4%
 		);
-		background-position: -200px 0;
-		background-size: 200px 100%;
+		background-position: -414px 0;
+		background-size: 414px 100%;
 		background-repeat: no-repeat;
 		color: darken($color, 20%);
 		&:focus,

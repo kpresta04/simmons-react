@@ -29,7 +29,14 @@
 		height: 300px;
 		resize: none;
 	}
+	input:focus {
+		outline-color: rgb(92, 163, 245) !important;
+	}
+	textarea:focus {
+		outline-color: rgb(92, 163, 245) !important;
+	}
 	#sendBtn {
+		min-width: 203px;
 		margin-bottom: 3em;
 		font-weight: bold;
 	}
