@@ -6,7 +6,16 @@ const Contact = () => (
 	<div className="main">
 		<FAQ />
 		<div id="contact">
+			<h3>Hours of Operation</h3>
+			<ul>
+				<li>Monday – Friday: 9 a.m. – 5:00 p.m. CST</li>
+				<li>Saturday: 9:-00 a.m. – 1:00 p.m. CST</li>
+			</ul>
 			<h3>Drop Us A Line</h3>
+			<p>
+				To get a free quote on a repair or for any other inquiry give us a call
+				at 913-782-3131, or send us an email with the form below.{" "}
+			</p>
 
 			<form
 				id="contactForm"
@@ -14,7 +23,7 @@ const Contact = () => (
 					e.preventDefault();
 				}}
 			>
-				<input type="text" placeholder="NAME" required=" " />
+				<input type="text" placeholder="NAME" />
 				<input type="email" placeholder="EMAIL" required=" " />
 				<textarea
 					placeholder="YOUR MESSAGE"

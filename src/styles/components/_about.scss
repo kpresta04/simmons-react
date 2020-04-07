@@ -3,9 +3,15 @@
 	max-width: 1050px;
 	margin: 0 auto;
 	background-color: white;
-
-	// justify-content: center;
 	padding: 1em;
+
+	.map {
+		margin-top: 2em;
+		width: 100%;
+		height: auto;
+		min-height: 400px;
+		border: 2px solid black;
+	}
 
 	p {
 		width: 100%;
