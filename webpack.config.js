@@ -1,6 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const BrotliGzipPlugin = require("brotli-gzip-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = (env) => {
 	const isProd = env === "production";
@@ -14,18 +14,18 @@ module.exports = (env) => {
 
 		plugins: [
 			new MiniCssExtractPlugin(),
-			new BrotliGzipPlugin({
-				asset: "[path].br[query]",
-				algorithm: "brotli",
-				test: /\.(js|css|html|svg)$/,
+			new CompressionPlugin({
+				filename: "[path].gz[query]",
+				algorithm: "gzip",
+				test: /\.js$|\.css$|\.html$/,
 				threshold: 10240,
 				minRatio: 0.8,
-				quality: 11,
 			}),
-			new BrotliGzipPlugin({
-				asset: "[path].gz[query]",
-				algorithm: "gzip",
+			new CompressionPlugin({
+				filename: "[path].br[query]",
+				algorithm: "brotliCompress",
 				test: /\.(js|css|html|svg)$/,
+				compressionOptions: { level: 11 },
 				threshold: 10240,
 				minRatio: 0.8,
 			}),
