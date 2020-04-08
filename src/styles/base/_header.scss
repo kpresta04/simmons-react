@@ -26,12 +26,13 @@ header {
 	margin: 0 1em;
 }
 .headerLogo {
-	grid-column: 3;
+	grid-column: 3/5;
+	justify-self: center;
+	// grid-column: 3;
 }
 header img {
 	height: 5em;
 	width: 8em;
-	// grid-column: 1;
 	// float: right;
 }
 

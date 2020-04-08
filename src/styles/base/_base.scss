@@ -21,6 +21,23 @@ body {
 button {
 	cursor: pointer;
 }
+.back-button {
+	display: block;
+	margin: 10px auto;
+	background-color: $greyBlue;
+	color: white;
+	text-transform: uppercase;
+
+	border: none;
+	padding: 0.5em;
+	font-size: 1.1em;
+	border-radius: 8px;
+	a {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
 body,
 html {
 	overflow-y: scroll;

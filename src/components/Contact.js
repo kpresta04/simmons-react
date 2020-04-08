@@ -31,7 +31,7 @@ const Contact = () => (
 				></textarea>
 				<button id="sendBtn">Send </button>
 			</form>
-			<button>
+			<button className="back-button">
 				<Link to="/">Back To Simmons</Link>
 			</button>
 		</div>

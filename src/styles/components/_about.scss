@@ -89,23 +89,6 @@
 			color: darken($greyBlue, 15%);
 		}
 	}
-	button {
-		display: block;
-		margin: 10px auto;
-		background-color: $greyBlue;
-		color: white;
-		text-transform: uppercase;
-
-		border: none;
-		padding: 0.5em;
-		font-size: 1.1em;
-		border-radius: 8px;
-		a {
-			color: white;
-			text-decoration: none;
-			font-weight: bold;
-		}
-	}
 }
 @media only screen and (min-width: 760px) {
 	.banner h1 {

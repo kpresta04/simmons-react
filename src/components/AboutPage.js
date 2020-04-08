@@ -58,7 +58,7 @@ const AboutPage = () => (
 					<h6>Craftsman</h6>
 				</div>
 			</div>
-			<button>
+			<button className="back-button">
 				<Link to="/">Back To Simmons</Link>
 			</button>
 		</div>

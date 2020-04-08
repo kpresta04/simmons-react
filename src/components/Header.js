@@ -5,7 +5,7 @@ import BurgerMenu from "./BurgerMenu";
 const Header = () => (
 	<div className="headerParent">
 		<header>
-			{window.screen.width < 700 && <BurgerMenu />}
+			{window.screen.width < 900 && <BurgerMenu />}
 			<NavLink
 				to="/"
 				className="headerLogo"
@@ -14,7 +14,7 @@ const Header = () => (
 			>
 				<img src="./logoSmall.png"></img>
 			</NavLink>
-			{window.screen.width >= 700 && (
+			{window.screen.width >= 900 && (
 				<div style={{ display: "contents" }}>
 					<div id="siteLinks">
 						<NavLink to="/shop" activeClassName="is-active">
@@ -31,7 +31,7 @@ const Header = () => (
 							FAQ
 						</NavLink>
 						<NavLink to="/contact" activeClassName="is-active">
-							Contact Us
+							Contact
 						</NavLink>
 					</div>
 					<div id="accountLinks">

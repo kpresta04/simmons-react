@@ -1,19 +1,12 @@
 @media only screen and (min-width: 768px) {
-  //   #siteLinks,
-  //   #accountLinks {
-  //     display: block;
-  //   }
-  .headerLogo {
-    grid-column: 1;
-  }
-  header img {
-    height: 6em;
-    width: 9em;
-    grid-column: 1;
-    float: right;
-  }
-  #siteLinks a,
-  #accountLinks a {
-    margin: 0 0.5em;
-  }
+	header img {
+		height: 6em;
+		width: 9em;
+		grid-column: 1;
+		float: right;
+	}
+	#siteLinks a,
+	#accountLinks a {
+		margin: 0 0.5em;
+	}
 }

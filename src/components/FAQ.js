@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class FAQ extends React.Component {
 	constructor(props) {
@@ -92,6 +93,9 @@ class FAQ extends React.Component {
 						</div>
 					</div>
 				</div>
+				<button className="back-button">
+					<Link to="/">Back To Simmons</Link>
+				</button>
 			</div>
 		);
 	}
