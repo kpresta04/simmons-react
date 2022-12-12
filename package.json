@@ -17,7 +17,7 @@
 		"babel-loader": "^8.0.6",
 		"compression": "^1.7.4",
 		"css-loader": "^3.4.2",
-		"express": "^4.17.1",
+		"express": "^4.17.3",
 		"express-static-gzip": "^2.0.6",
 		"firebase": "^7.10.0",
 		"live-server": "^1.2.1",
